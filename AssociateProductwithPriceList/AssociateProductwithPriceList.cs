@@ -8,6 +8,7 @@ namespace AssociateProductwithPriceList
     {
         public void Execute(IServiceProvider serviceProvider)
         {
+            //test commit
             ITracingService tracingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
             IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
 
