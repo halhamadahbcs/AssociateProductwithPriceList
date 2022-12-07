@@ -18,6 +18,8 @@ namespace AssociateProductwithPriceList
 
                 if (context.MessageName == "Create")
                 {
+
+
                     Entity PriceListItem = context.InputParameters["Target"] as Entity;
 
                     if (PriceListItem.Contains("productid") && PriceListItem.Contains("pricelevelid"))
