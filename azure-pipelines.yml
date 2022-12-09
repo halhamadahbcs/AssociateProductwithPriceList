@@ -17,7 +17,7 @@ steps:
     sourceVerifySSLCertificate: false
     sourceGitRepositoryPersonalAccessToken: "hkiuthspa3yz6rmvxld6qnkzlcd7qbypquv5rlnkug6ewk2cyntq"
     destinationGitRepositoryUri: 'https://github.com/halhamadahbcs/AssociateProductwithPriceList.git'
-    destinationGitRepositoryPersonalAccessToken: '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'
-    destinationVerifySSLCertificate: true
+    destinationGitRepositoryPersonalAccessToken: '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'
+    destinationVerifySSLCertificate: false
    
 
