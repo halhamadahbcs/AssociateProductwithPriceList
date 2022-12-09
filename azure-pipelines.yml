@@ -1,0 +1,23 @@
+# Starter pipeline
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: mirror-git-repository-vsts-task@1
+  inputs:
+    sourceGitRepositoryUri: 'https://dev.azure.com/BCSDevOps/Blue%20Bear%20Waste%20Systems/_git/AssociateProductwithPriceList'
+    sourceVerifySSLCertificate: false
+    sourceGitRepositoryPersonalAccessToken: "hkiuthspa3yz6rmvxld6qnkzlcd7qbypquv5rlnkug6ewk2cyntq"
+    destinationGitRepositoryUri: 'https://github.com/halhamadahbcs/AssociateProductwithPriceList.git'
+    destinationGitRepositoryPersonalAccessToken: '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'
+    destinationVerifySSLCertificate: false
+   
+
